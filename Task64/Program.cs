@@ -13,6 +13,6 @@ Console.WriteLine($"\nНатуральные числа от {number} до 1: \n
 string FindIntNumber(double num)
 {
     num = Math.Floor(num);
-    if (num == 1 || num <= 0) return "1";
+    if (num  <= 1) return "1";
     else return $"{num}, {FindIntNumber(num - 1)}";
 }
